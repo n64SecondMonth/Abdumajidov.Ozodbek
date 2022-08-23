@@ -1,0 +1,44 @@
+.find{
+    display: flex;
+    background-color: #2D2641;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    &__title{
+        color: white;
+        font-size: 55px;
+        margin-left: 40px;
+        width: 50%;
+    }
+    &__btn{
+            width: 20%;
+            height: 40px;
+            color: white;
+            background-color: #2D2641;
+            border-color: white;
+            margin-top: 30px;
+            &:hover{
+                background-color: white;
+                color: #2D2641;
+            }
+       
+    }
+}
+@media screen and (max-width:375px) {
+    .find{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__title{
+            width: 90%;
+            font-size: 30px;
+            text-align: center;
+        }
+        &__btn{
+            width: 120px;
+            margin-left: 30px;
+        }
+    }
+    
+}

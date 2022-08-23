@@ -1,0 +1,22 @@
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    border: 1px solid;
+
+}
+body{
+    font-family: 'DM Serif Display', serif;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width:375px) {
+    .container{
+        width: 375px;
+    }
+    
+}

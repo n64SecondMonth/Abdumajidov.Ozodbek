@@ -1,0 +1,75 @@
+.hero{
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color:#2D2641 ;
+    margin-bottom: 170px;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 90px;
+        width: 45%;
+    }
+    &__title{
+        color: white;
+        font-size: 72px;
+    }
+    &__text{
+        color: white;
+        margin-top: -50px;
+    }
+    &__btn{
+        width: 30%;
+        height: 35px;
+        color: white;
+        background-color: #2D2641;
+        border-color: white;
+        margin-top: 30px;
+        &:hover{
+            background-color: white;
+            color: #2D2641;
+        }
+    }
+    &__span{
+        width: 30%;
+        background-color: white;
+         height: 1px;
+    }
+    &__img{
+        flex: 1;
+        position: absolute;
+        left: 55%;
+        width: 35%;
+        top: 70px;
+    }
+}
+@media  screen and (max-width:375px) {
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        position: static;
+        &__btn{
+            text-align: center;
+            margin-left: 130px;
+        }
+        &__span{
+            display: none;
+        }
+        &__title{
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        &__card{
+            margin-left: -100px;
+            width: 100%;
+            text-align: center;
+            justify-content: flex-start;
+        }
+        &__img{
+            width: 100%;
+            flex: 1;
+            position: static;
+        }
+    }
+}
